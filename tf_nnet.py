@@ -5,10 +5,10 @@ n_classes = 10
 batch_size = 100
 
 n_nodes_h1 = 500
-n_nodes_h2 = 1500
+n_nodes_h2 = 4500
 n_nodes_h3 = 50
 
-hm_epochs = 100
+hm_epochs = 20
 
 image_size = 28 * 28
 
@@ -71,9 +71,7 @@ def get_data():
 
 
 def main():
-    print("hello")
-    mnist = get_data()
-    train_nn(mnist)
+    train_nn(get_data())
 
 
 if __name__ == "__main__":
